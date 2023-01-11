@@ -1,4 +1,4 @@
-iW
+import sys
 class Vertex:
     def __init__(self):
         self.value = 0
@@ -40,10 +40,13 @@ class App:
         self.vList[self.start].visit=True
 
         while queue:
+            print(queue)
             index = queue.pop(0)
+
             for x in self.vList[index].connect:
                 if not self.vList[x[0]].visit or self.vList[x[0]].value > self.vList[index].value+x[1]:
-                    queue.append(x[0])
+                    if x[0] not in queue:
+                        queue.append(x[0])
                     self.vList[x[0]].visit = True
                     self.vList[x[0]].value = self.vList[index].value+x[1]
 
@@ -56,7 +59,7 @@ class App:
 
 
 
-#f = open("test.txt",'r')
-app = App(sys.stdin)
+f = open("test.txt",'r')
+app = App(f)
 app.InputData()
 app.BFS()
