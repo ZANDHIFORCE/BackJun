@@ -19,7 +19,7 @@ try:
         ppl.remove(first)
         ppl.remove(second)
         raise StopIteration
-        
+
 except StopIteration:
   for x in ppl:
     print(x)
