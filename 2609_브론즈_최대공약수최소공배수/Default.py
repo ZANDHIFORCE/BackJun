@@ -7,7 +7,7 @@ if num1>num2:
   _ = num1
   num1 = num2
   num2 = _
-  
+
 result1 = 1
 for x in range(num1, 1, -1):
   if num1%x==0 and num2%x==0:
