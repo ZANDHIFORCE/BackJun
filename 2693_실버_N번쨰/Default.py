@@ -10,5 +10,4 @@ for _ in range(int(input_str)):
         max = x
     num_list.remove(max)
   print(max)
-    
-  
+
