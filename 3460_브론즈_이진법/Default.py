@@ -1,17 +1,26 @@
-#file = open('test.txt','r')
+file = open("test.txt",'r')
 
-input_str = input()  #file.readline()
+input_str = file.readline()
+N, S = map(int, input_str.split(" "))
+input_str = file.readline()
+A_list = list(map(int, input_str.split(" ")))
 
-result = []
+for i in range(0, N):
+  A_list[i] = A_list[i] - S
+  if A_list[i] <0:
+    A_list[i] = int(A_list[i]*-1)
 
-for _ in range(int(input_str)):
-  num = int(input())  #int(file.readline())
-  while num != 0:
-    result.append(num % 2)
-    num = int(num / 2)
+min = A_list[0]
+for x in A_list:
+  if x < min:
+    min = x
 
-  for i in range(len(result)):
-    if result[i] == 1:
-      print(i, end=" ")
-  print('\b')
-  result.clear()
+check = True
+for i in range(min,-1,0):
+  for x in A_list:
+    if x % i != 0:
+      check = False
+      break
+  if check is True:
+    print(i)
+    break

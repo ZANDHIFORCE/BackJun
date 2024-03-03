@@ -9,7 +9,7 @@ def GCC(x, y):
   while y:
     x, y = y, x%y
   return x
-  
+
 for i in range(0, N):
   A_list[i] = A_list[i] - S
   if A_list[i] <0:
