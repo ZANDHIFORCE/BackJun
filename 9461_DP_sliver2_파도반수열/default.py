@@ -1,5 +1,5 @@
 #1 1 1 2 2 3 "4" 5 7 9 "12" 16 21
-#a[i] = a[i-1] + a[i-5]
+#a[i] = a[i-1] + a[i-5] asd
 
 a = [0,1,1,1,2]
 
@@ -16,3 +16,4 @@ for i in range(5,max+1):
     
 for x in input_list:
     print(a[x])
+
