@@ -4,7 +4,6 @@ def solution(bandage, health, attacks):
     CAST_TIME, HEAL, BONUS_HEAL = bandage   #CAST_TIME, HEAL, BONUS_HEAL: 시전시간, 초당 회복량, 추가 회복량
     FULL_HP = health    #FULL_HP: 최대체력
     enduration = 0  #지속시간
-    
     for i in range(1, d_day+1):
         #오늘이 공격받는 날이면? -> HP깎고 죽었는지 확인, 지속시간 리셋
         if  i in attacks_dict:
