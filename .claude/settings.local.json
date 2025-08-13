@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(move \"PCCP_기출1_1\" \"기타/\")",
+      "Bash(move \"PCCP_기출1_2\" \"기타/\")",
+      "Bash(move \"PCCP_기출2_1\" \"기타/\")",
+      "Bash(move \"PCCP_기출3_1\" \"기타/\")",
+      "Bash(move \"PCCP_기출4_1\" \"기타/\")",
+      "Bash(move \"PCCP기출4_2\" \"기타/\")",
+      "Bash(move:*)",
+      "Bash(move \"프로그래머스_N으로표현\" \"기타/\")",
+      "Bash(move \"README.md\" \"기타/\")",
+      "Bash(move \"main.py\" \"기타/\")",
+      "Bash(move \"poetry.lock\" \"기타/\")",
+      "Bash(move \"sandbox.py\" \"기타/\")",
+      "Bash(move \"test.txt\" \"기타/\")",
+      "Bash(mv:*)",
+      "Bash(mkdir:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
